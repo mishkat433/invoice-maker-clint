@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=Oswald:wght@200;400;500;600&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {}
+
+.p-default {
+  @apply px-2.5
+}
+
+.nav-link-style {
+  @apply font-medium hover:text-primary-red duration-300 text-primary-text
+}
+
+.primary-red-button {
+  @apply border-1 border-primary-red hover:bg-primary-red rounded-md text-primary-text hover:text-white-text duration-300
+}
+
+.primary-purple-button {
+  @apply border-1 border-purple-text hover:bg-purple-text rounded-md text-white-text  duration-300
+}
+
+
+
+
