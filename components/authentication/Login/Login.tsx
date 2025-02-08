@@ -30,7 +30,7 @@ const Login = ({ setSwitchAuth }: props) => {
     return (
         <form onSubmit={handleSubmit(loginHandle)}>
 
-            <div className={`card shadow-2xl bg-[#433f6182] text-black duration-300 `}>
+            <div className={`card shadow-2xl bg-[#433f6182] text-black duration-300 border`}>
                 <div className="card-body">
                     <h3 className="text-white-text font-bold text-center text-xl">Login</h3>
                     <div className="form-control">

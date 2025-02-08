@@ -12,26 +12,19 @@ const Starter = () => {
     const [switchAuth, setSwitchAuth] = useState(true)
     return (
         <div className="bg-starter-bg bg-center bg-no-repeat bg-cover bg-fixed overflow-y-auto text-white-text font-mulish ">
-            {/* <div className=" wrapper">
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-                <div className="circle-div"><span className="dot"></span></div>
-            </div> */}
-            <div className=" flex flex-col lg:flex-row justify-evenly md:justify-between items-center h-[100vh] container mx-auto gap-4 md:gap-32 z-10 p-2.5 lg:p-0">
+            {/* Inner animation start */}
+            <div className=" wrapper">
+                {[...Array(15)].map((slide, index) => (
+
+                    <div key={index} className="circle-div"><span className="dot"></span></div>
+
+                ))}
+                {/* Inner animation end */}
+
+            </div>
+            <div className=" flex flex-col lg:flex-row justify-evenly md:justify-between items-center h-[100vh] container  gap-4 md:gap-32 z-10 p-2.5 lg:p-0 w-11/12 mx-auto">
                 <div className="w-full lg:w-3/5 text-center space-y-5 md:pt-5">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl uppercase font-extrabold leading-tight">Welcome to <br /> &quot;invoice maker&quot;</h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl uppercase font-extrabold  tracking-widest">Welcome to <br /> &quot;invoice maker&quot;</h1>
                     <p className=" text-xs md:text-sm  ">Trusted by millions of people and make unlimited number of invoices. Invoice Maker lets you instantly make invoices with our attractive invoice template straight from your web browser. The invoices you make can be print  or downloaded as a PDF.</p>
 
                     <div className="md:flex justify-center items-center hidden  ">
@@ -41,7 +34,7 @@ const Starter = () => {
                         }
                     </div>
                 </div>
-                <div className=" w-full  lg:w-2/5 md:pb-5 ">
+                <div className=" w-full  lg:w-2/5 md:pb-5  ">
                     {switchAuth ?
                         <Login setSwitchAuth={setSwitchAuth} />
                         :
