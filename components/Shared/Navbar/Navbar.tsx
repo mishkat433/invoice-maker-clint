@@ -12,9 +12,9 @@ const Navbar = () => {
 
     const menuItems =
         <>
-            <li className="nav-link-style  ">  <Link href={"/"} className="hover-underline-animation">Home</Link></li>
-            <li className="nav-link-style  ">  <Link href={"/"} className="hover-underline-animation">Invoice History</Link></li>
-            <li className="nav-link-style  ">  <Link href={"/"} className="hover-underline-animation">Settings</Link></li>
+            <li className="nav-link-style  ">  <Link href={"/home"} className="hover-underline-animation">Home</Link></li>
+            <li className="nav-link-style  ">  <Link href={"/invoice-history"} className="hover-underline-animation">Invoice History</Link></li>
+            <li className="nav-link-style  ">  <Link href={"/settings"} className="hover-underline-animation">Settings</Link></li>
             <li className="nav-link-style"> <button className=" button-transition primary-red-button py-1 px-2.5 w-full">Login</button> </li>
         </>
 

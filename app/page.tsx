@@ -10,14 +10,14 @@ import Login from "@/components/authentication/Login/Login";
 
 const Starter = () => {
     const [switchAuth, setSwitchAuth] = useState(true)
+
     return (
         <div className="bg-starter-bg bg-center bg-no-repeat bg-cover bg-fixed overflow-y-auto text-white-text font-mulish ">
+
             {/* Inner animation start */}
             <div className=" wrapper">
                 {[...Array(15)].map((slide, index) => (
-
                     <div key={index} className="circle-div"><span className="dot"></span></div>
-
                 ))}
                 {/* Inner animation end */}
 

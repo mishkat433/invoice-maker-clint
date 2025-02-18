@@ -12,9 +12,11 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
     return (
         <html lang="en">
             {/* className={inter.className} */}
-            <body >
+            <body className=''>
                 <Navbar />
-                {children}
+                <div className='w-11/12 mx-auto'>
+                    {children}
+                </div>
                 <Footer />
             </body>
         </html>

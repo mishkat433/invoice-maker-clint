@@ -23,6 +23,14 @@
   scroll-behavior: smooth;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 body {}
 
 .p-default {
@@ -38,9 +46,5 @@ body {}
 }
 
 .primary-purple-button {
-  @apply border-1 border-purple-text hover:bg-purple-text rounded-md text-white-text  duration-300
+  @apply border-1 border-purple-text hover:bg-purple-text rounded-md text-white-text duration-300
 }
-
-
-
-
